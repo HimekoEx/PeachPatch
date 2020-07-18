@@ -1,0 +1,20 @@
+{
+    "configurations": [{
+        "name": "Linux",
+        "includePath": [
+            "${workspaceFolder}/jni/**",
+            "D:/Android/android-ndk-r18b/sysroot/usr/include/**"
+        ],
+        "defines": [
+            "__arm__"
+        ],
+        "cStandard": "c11",
+        "cppStandard": "c++17",
+        "intelliSenseMode": "clang-x86",
+        "forcedInclude": [
+            "D:/Android/android-ndk-r18b/sysroot/usr/include/signal.h",
+            "D:/Android/android-ndk-r18b/sysroot/usr/include/unistd.h"
+        ]
+    }],
+    "version": 4
+}
