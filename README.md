@@ -9,9 +9,8 @@
 ## ABI 支持
 
 - [x] armeabi-v7a
-- [-] arm64-v8a
-- [-] x86
-- ( `x` 为 **已测试** ）
+- [ ] arm64-v8a
+- [ ] x86
 
 ## 使用方法
 
@@ -26,7 +25,7 @@ ulong addr = 0x00000000;
 
 //标准构建方式
 auto patch = PeachPatch(addr, (const void *)&NOP, 4);
-auto patch = PeachPatch(addr, "\x00\xF0\x20\xE3", 4);//未测试
+auto patch = PeachPatch(addr, "\x00\xF0\x20\xE3", 4);
 
 //Hex字符串构建
 auto patch = PeachPatch(addr, "00F020E3");
@@ -37,6 +36,9 @@ patch.Patch();
 
 //获取目标地址当前Hex字符串
 patch.get_CurrHex();
+
+//还原修改
+patch.Rebase();
 ```
 
 > 本项目借鉴于 [KittyMemory](https://github.com/MJx0/KittyMemory)
