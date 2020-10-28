@@ -9,7 +9,7 @@
 ## ABI 支持
 
 - [x] armeabi-v7a
-- [ ] arm64-v8a
+- [x] arm64-v8a
 - [ ] x86
 
 ## 使用方法
